@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #pp{
+            width:1000px;
+            height: 650px;
+            margin: 0 auto;
+
+        }
+        #pp p{
+
+            width: 20%;
+            height: 50px;
+            float: left;
+
+            margin-left: 40px;
+            line-height: 25px;
+            color: #ccc;
+        }
+        h1{
+            text-align: center;
+            border-bottom:1px solid #cccccc;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="pp">
+    <h1>座位表</h1>
+    <p>1.</p>
+    <p>2.</p>
+    <p>3.</p>
+    <p>4.</p>
+    <p v-for='list in lists' @click="ao" :style="color">{{list.seat}}{{list.name}}</br>{{list.post}}</p>
+    <p v-for='list in lists1' @click="ao" :style="color">{{list.seat}}{{list.name}}</br>{{list.post}}</p>
+    <p v-for='list in lists2' @click="ao" :style="color">{{list.seat}}{{list.name}}</br>{{list.post}}</p>
+    <p v-for='list in lists3' @click="ao" :style="color">{{list.seat}}{{list.name}}</br>{{list.post}}</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.min.js"></script>
+<script src="1.js"></script>
+</body>
+</html>>
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Document</title>-->
+
+    <!--<style>-->
+        <!--#pp{-->
+            <!--width:1000px;-->
+            <!--height: 650px;-->
+            <!--margin: 0 auto;-->
+
+        <!--}-->
+        <!--#pp p{-->
+
+            <!--width: 20%;-->
+            <!--height: 50px;-->
+            <!--float: left;-->
+<!--text-align: center;-->
+            <!--margin-left: 40px;-->
+            <!--line-height: 25px;-->
+            <!--color: #ccc;-->
+        <!--}-->
+        <!--h1{-->
+            <!--text-align: center;-->
+            <!--border-bottom:1px solid #cccccc;-->
+        <!--}-->
+        <!--#pp li{-->
+            <!--width: 200px;-->
+            <!--height:70px;-->
+            <!--line-height: 30px;-->
+            <!--list-style: none;-->
+        <!--}-->
+        <!--#pp ul{-->
+           <!--float: left;-->
+
+
+        <!--}-->
+        <!--{asd}.{-->
+         <!--border='1px solid black';-->
+    <!--}-->
+    <!--</style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="pp">-->
+    <!--<h1>座位表</h1>-->
+    <!--<p>1.</p>-->
+    <!--<p>2.</p>-->
+    <!--<p>3.</p>-->
+    <!--<p>4.</p>-->
+    <!--<ul v-for='(list,index) in lists' >-->
+
+        <!--<li v-for="(lis,ins) in list"  :class="{asd: lists[index][ins].bool}" @click="ao(index,ins)">{{lis.seat}}{{lis.name}}</br>{{lis.post}} </li>-->
+    <!--</ul>-->
+
+<!--</div>-->
+<!--<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>-->
+<!--<script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.min.js"></script>-->
+<!--<script src="1.js"></script>-->
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        [cloak]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!--<div id="my">-->
+    <!--&lt;!&ndash;cloak 取消闪烁&ndash;&gt;-->
+<!--<div v-cloak>{{msg}}</div>-->
+<!--&lt;!&ndash;<div v-html="html"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div v-text="msg"></div>&ndash;&gt;-->
+<!--</div>-->
+<div id="my" @click="show1()">A1
+    <div @click="show2()">A2
+        <!--$event触发这个事件的对象-->
+      <button @click="show3($event)">A3</button>
+    </div>
+
+    <a href="www.baidu.com" @click="open($event)">1111</a>
+    <a href="www.baidu.com" @click.prevent.stop="open()">1111</a>
+</div>
+
+
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
